@@ -25,6 +25,10 @@ echo 'export PATH="/opt/warden/bin:$PATH"' >> ~/.zshrc
 # Export Warden to current shell's PATH
 PATH="/opt/warden/bin:$PATH"
 
+# Make the changes to take effect in your shell; zshrc here
+
+source ~/.zshrc
+
 # Create and start Warden services
 warden svc up
 
