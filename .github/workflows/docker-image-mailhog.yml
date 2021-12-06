@@ -36,6 +36,6 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            drpayyne/warden-mailhog:1.0
-            ghcr.io/drpayyne/warden-mailhog:1.0
-            ghcr.io/drpayyne/warden-mailhog:latest
+            cvarela-usesi/warden-mailhog:1.0
+            ghcr.io/cvarela-usesi/warden-mailhog:1.0
+            ghcr.io/cvarela-usesi/warden-mailhog:latest

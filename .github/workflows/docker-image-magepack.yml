@@ -37,6 +37,6 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            drpayyne/warden-magepack:2.3
-            ghcr.io/drpayyne/warden-magepack:2.3
-            ghcr.io/drpayyne/warden-magepack:latest
+            cvarela-usesi/warden-magepack:2.3
+            ghcr.io/cvarela-usesi/warden-magepack:2.3
+            ghcr.io/cvarela-usesi/warden-magepack:latest

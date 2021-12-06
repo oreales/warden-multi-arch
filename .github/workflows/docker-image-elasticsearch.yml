@@ -36,6 +36,6 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            drpayyne/elasticsearch-multi-arch:7.9
-            ghcr.io/drpayyne/warden-elasticsearch:7.9
-            ghcr.io/drpayyne/warden-elasticsearch:latest
+            cvarela-usesi/elasticsearch-multi-arch:7.9
+            ghcr.io/cvarela-usesi/warden-elasticsearch:7.9
+            ghcr.io/cvarela-usesi/warden-elasticsearch:latest

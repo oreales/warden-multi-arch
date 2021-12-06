@@ -1,4 +1,4 @@
-FROM ghcr.io/drpayyne/warden-php-m2
+FROM ghcr.io/cvarela-usesi/warden-php-m2
 
 USER root
 

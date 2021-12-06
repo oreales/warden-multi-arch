@@ -52,9 +52,9 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            drpayyne/varnish-multi-arch:6.5
-            ghcr.io/drpayyne/warden-varnish:6.5
-            ghcr.io/drpayyne/warden-varnish:latest
+            cvarela-usesi/varnish-multi-arch:6.5
+            ghcr.io/cvarela-usesi/warden-varnish:6.5
+            ghcr.io/cvarela-usesi/warden-varnish:latest
   varnish64:
     if: ${{ github.event.inputs.varnish64 == '1' }}
     runs-on: ubuntu-latest
@@ -90,8 +90,8 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            drpayyne/varnish-multi-arch:6.4
-            ghcr.io/drpayyne/warden-varnish:6.4
+            cvarela-usesi/varnish-multi-arch:6.4
+            ghcr.io/cvarela-usesi/warden-varnish:6.4
   varnish60:
     if: ${{ github.event.inputs.varnish60 == '1' }}
     runs-on: ubuntu-latest
@@ -127,5 +127,5 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            drpayyne/varnish-multi-arch:6.0
-            ghcr.io/drpayyne/warden-varnish:6.0
+            cvarela-usesi/varnish-multi-arch:6.0
+            ghcr.io/cvarela-usesi/warden-varnish:6.0
