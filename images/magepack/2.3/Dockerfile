@@ -1,4 +1,4 @@
-FROM ghcr.io/cvarela-usesi/chrome-puppeteer
+FROM ghcr.io/drpayyne/chrome-puppeteer
 
 USER root
 
