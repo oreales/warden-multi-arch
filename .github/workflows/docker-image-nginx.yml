@@ -52,7 +52,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            cvarela-usesi/nginx-multi-arch:1.18
+            gabriel0702usesi/nginx-multi-arch:1.18
             ghcr.io/cvarela-usesi/warden-nginx:1.18
             ghcr.io/cvarela-usesi/warden-nginx:latest
   nginx17:
@@ -90,7 +90,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            cvarela-usesi/nginx-multi-arch:1.17
+            gabriel0702usesi/nginx-multi-arch:1.17
             ghcr.io/cvarela-usesi/warden-nginx:1.17
   nginx16:
     if: ${{ github.event.inputs.nginx18 == '1' }}
@@ -127,5 +127,5 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            cvarela-usesi/nginx-multi-arch:1.16
+            gabriel0702usesi/nginx-multi-arch:1.16
             ghcr.io/cvarela-usesi/warden-nginx:1.16

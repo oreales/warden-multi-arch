@@ -52,7 +52,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            cvarela-usesi/varnish-multi-arch:6.5
+            gabriel0702usesi/varnish-multi-arch:6.5
             ghcr.io/cvarela-usesi/warden-varnish:6.5
             ghcr.io/cvarela-usesi/warden-varnish:latest
   varnish64:
@@ -90,7 +90,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            cvarela-usesi/varnish-multi-arch:6.4
+            gabriel0702usesi/varnish-multi-arch:6.4
             ghcr.io/cvarela-usesi/warden-varnish:6.4
   varnish60:
     if: ${{ github.event.inputs.varnish60 == '1' }}
@@ -127,5 +127,5 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            cvarela-usesi/varnish-multi-arch:6.0
+            gabriel0702usesi/varnish-multi-arch:6.0
             ghcr.io/cvarela-usesi/warden-varnish:6.0
