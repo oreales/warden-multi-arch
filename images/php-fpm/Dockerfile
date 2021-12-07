@@ -10,13 +10,13 @@ ENV MAILHOG_PORT    1025
 
 RUN apt update
 
-RUN if [ ${PHP_TAG} != "7.4-deb" ]  \
-    && [ ${PHP_TAG} != "7.3-deb" ]; then \
+RUN if [ $PHP_TAG != "7.4-deb" ]  \
+    && [ $PHP_TAG != "7.3-deb" ]; then \
         BIND_UTILS=bind9utils; \
     else \
         BIND_UTILS=bind9-utils; \
     fi \
-    && if [ ${PHP_TAG} = "7.0-deb" ]; then \
+    && if [ $PHP_TAG = "7.0-deb" ]; then \
         ACK=ack-grep; \
     else \
         ACK=ack; \
