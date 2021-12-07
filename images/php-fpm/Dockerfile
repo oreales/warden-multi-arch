@@ -10,8 +10,19 @@ ENV MAILHOG_PORT    1025
 
 RUN apt update
 
-RUN apt install -y pv sudo bind9-utils python3-pip bash-completion rsync socat oathtool \
-        wget ack automake autoconf nano vim cron mariadb-server
+RUN if [ ${PHP_TAG} != "7.4-deb" ]  \
+    && [ ${PHP_TAG} != "7.3-deb" ]; then \
+        BIND_UTILS=bind9utils; \
+    else \
+        BIND_UTILS=bind9-utils; \
+    fi \
+    && if [ ${PHP_TAG} = "7.0-deb" ]; then \
+        ACK=ack-grep; \
+    else \
+        ACK=ack; \
+    fi \
+    && apt install -y pv sudo ${BIND_UTILS} python3-pip bash-completion rsync socat oathtool \
+        wget ${ACK} automake autoconf nano vim cron mariadb-server
 
 RUN apt install -y python2 && ln -s /usr/bin/python2 /usr/bin/python
 
