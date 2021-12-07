@@ -1,5 +1,6 @@
 ARG PHP_TAG
 FROM ghcr.io/cvarela-usesi/php-fpm-loaders:${PHP_TAG}
+ARG PHP_TAG
 
 # Clear undesired settings from base fpm images
 ENV COMPOSER_ALLOW_SUPERUSER=
