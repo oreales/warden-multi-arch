@@ -27,7 +27,11 @@ RUN if [ $PHP_TAG != "7.4-deb" ]  \
     && apt install -y pv sudo ${BIND_UTILS} python3-pip bash-completion rsync socat oathtool \
         wget ${ACK} automake autoconf nano vim cron ${MARIADB_SERVER}
 
-RUN rm -rf /usr/bin/python && apt install -y python2 && ln -s /usr/bin/python2 /usr/bin/python
+RUN if [ $PHP_TAG = "7.0-deb" ]; then \
+        apt install -y python; \
+    else \
+        rm -rf /usr/bin/python && apt install -y python2 && ln -s /usr/bin/python2 /usr/bin/python; \
+    fi
 
 ENV NODE_VERSION    10
 RUN npm install -g n \
