@@ -18,11 +18,11 @@ RUN if [ $PHP_TAG != "7.4-deb" ]  \
         BIND_UTILS=bind9-utils; \
     fi \
     && if [ $PHP_TAG = "7.0-deb" ]; then \
-        ACK=ack-grep; \
-        MARIADB_SERVER= \
+        ACK=ack-grep \
+        MARIADB_SERVER=; \
     else \
-        ACK=ack; \
-        MARIADB_SERVER=mariadb-server \
+        ACK=ack \
+        MARIADB_SERVER=mariadb-server; \
     fi \
     && apt install -y pv sudo ${BIND_UTILS} python3-pip bash-completion rsync socat oathtool \
         wget ${ACK} automake autoconf nano vim cron ${MARIADB_SERVER}
