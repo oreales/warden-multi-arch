@@ -3,9 +3,9 @@
 ![Docker Image Architures](https://img.shields.io/badge/architecture-arm64%20%7C%20amd64-success)
 ![PHP Version](https://img.shields.io/badge/php-7.4-blue)
 ![Magento Version](https://img.shields.io/badge/magento-2.4-orange)
-![License](https://img.shields.io/github/license/drpayyne/docker-php)
+![License](https://img.shields.io/github/license/cvarela-usesi/docker-php)
 
-> This repository is forked from https://github.com/davidalger/warden to make Warden multi-arch. Please refer to the source repository for the original README.
+> This repository is forked from https://github.com/drpayyne/warden-multi-arch to make it compatible with PHP versions < 7.3. Please refer to the source repository for the original README.
 
 ## Installing Warden
 
@@ -17,7 +17,7 @@ sudo mkdir /opt/warden
 sudo chown $(whoami) /opt/warden
 
 # Clone multi-arch fork of Warden (this repository) into the installation directory
-git clone https://github.com/drpayyne/warden-multi-arch.git /opt/warden
+git clone https://github.com/cvarela-usesi/warden-multi-arch.git /opt/warden
 
 # Export Warden to PATH. (use your appropriate shell resource file; zshrc here.)
 echo 'export PATH="/opt/warden/bin:$PATH"' >> ~/.zshrc
@@ -38,7 +38,7 @@ warden install
 
 ## Available Packages
 
-Add the registry & user prefix of `ghcr.io/drpayyne/` to all the below packages for usage. All the below packages are available for both `linux/arm64` and `linux/amd64` architectures.
+Add the registry & user prefix of `ghcr.io/cvarela-usesi/` to all the below packages for usage. All the below packages are available for both `linux/arm64` and `linux/amd64` architectures.
 
 | Service | Package & Tag |
 |---|---|
