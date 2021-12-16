@@ -37,7 +37,7 @@ services:
 
   php-debug:
     hostname: "${WARDEN_ENV_NAME}-php-debug"
-    image: ghcr.io/cvarela-usesi/warden-php-m2-xdebug3:${PHP_VERSION}-deb
+    image: ghcr.io/cvarela-usesi/warden-php-m2-${XDEBUG_VERSION}:${PHP_VERSION}-deb
     environment:
       - TRAEFIK_DOMAIN
       - TRAEFIK_SUBDOMAIN
