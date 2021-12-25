@@ -38,5 +38,5 @@ jobs:
           push: true
           tags: |
             gabriel0702usesi/warden-magepack:2.3
-            ghcr.io/cvarela-usesi/warden-magepack:2.3
-            ghcr.io/cvarela-usesi/warden-magepack:latest
+            ghcr.io/oreales/warden-magepack:2.3
+            ghcr.io/oreales/warden-magepack:latest

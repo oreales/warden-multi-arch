@@ -53,8 +53,8 @@ jobs:
           push: true
           tags: |
             gabriel0702usesi/varnish-multi-arch:6.5
-            ghcr.io/cvarela-usesi/warden-varnish:6.5
-            ghcr.io/cvarela-usesi/warden-varnish:latest
+            ghcr.io/oreales/warden-varnish:6.5
+            ghcr.io/oreales/warden-varnish:latest
   varnish64:
     if: ${{ github.event.inputs.varnish64 == '1' }}
     runs-on: ubuntu-latest
@@ -91,7 +91,7 @@ jobs:
           push: true
           tags: |
             gabriel0702usesi/varnish-multi-arch:6.4
-            ghcr.io/cvarela-usesi/warden-varnish:6.4
+            ghcr.io/oreales/warden-varnish:6.4
   varnish60:
     if: ${{ github.event.inputs.varnish60 == '1' }}
     runs-on: ubuntu-latest
@@ -128,4 +128,4 @@ jobs:
           push: true
           tags: |
             gabriel0702usesi/varnish-multi-arch:6.0
-            ghcr.io/cvarela-usesi/warden-varnish:6.0
+            ghcr.io/oreales/warden-varnish:6.0

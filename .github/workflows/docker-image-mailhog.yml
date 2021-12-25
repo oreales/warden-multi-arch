@@ -37,5 +37,5 @@ jobs:
           push: true
           tags: |
             gabriel0702usesi/warden-mailhog:1.0
-            ghcr.io/cvarela-usesi/warden-mailhog:1.0
-            ghcr.io/cvarela-usesi/warden-mailhog:latest
+            ghcr.io/oreales/warden-mailhog:1.0
+            ghcr.io/oreales/warden-mailhog:latest

@@ -37,5 +37,5 @@ jobs:
           push: true
           tags: |
             gabriel0702usesi/elasticsearch-multi-arch:7.9
-            ghcr.io/cvarela-usesi/warden-elasticsearch:7.9
-            ghcr.io/cvarela-usesi/warden-elasticsearch:latest
+            ghcr.io/oreales/warden-elasticsearch:7.9
+            ghcr.io/oreales/warden-elasticsearch:latest

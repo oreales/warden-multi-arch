@@ -49,5 +49,5 @@ jobs:
           build-args: |
             PHP_TAG=${{ github.event.inputs.from }}
           tags: |
-            ghcr.io/cvarela-usesi/warden-php:${{ github.event.inputs.to }}
-            ghcr.io/cvarela-usesi/warden-php:latest
+            ghcr.io/oreales/warden-php:${{ github.event.inputs.to }}
+            ghcr.io/oreales/warden-php:latest
