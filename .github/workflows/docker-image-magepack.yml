@@ -37,6 +37,6 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            gabriel0702usesi/warden-magepack:2.3
+            oreales/warden-magepack:2.3
             ghcr.io/oreales/warden-magepack:2.3
             ghcr.io/oreales/warden-magepack:latest

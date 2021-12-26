@@ -36,6 +36,6 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            gabriel0702usesi/elasticsearch-multi-arch:7.9
+            oreales/elasticsearch-multi-arch:7.9
             ghcr.io/oreales/warden-elasticsearch:7.9
             ghcr.io/oreales/warden-elasticsearch:latest
